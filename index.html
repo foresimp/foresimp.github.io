@@ -6,16 +6,14 @@
     </head>
     <body>
         <form id="form1" action="#">
-          <input type="text" id="input-password">
-          <input type="button" onclick="showMessage(input-password.value)" value="ログインする">
+          <input type="password" id="num">
+          <input type="button" onclick=location.href='showMessage(num.value)' value="ログイン">
         </form>
-        <p id="output-message"></p>
         <script language="javascript" type="text/javascript">
-          function showMessage(value) {
-            //テキストボックスの値を使って、出力するメッセージを生成する
-            const output = "入力された内容は「" + value + "」です。";
-            //出力用のp要素にメッセージを表示
-            document.getElementById("output-message").innerHTML = output;
+          function showMessage(password) {
+            if (password == "Fopjp423") {
+                return "login.html";
+            }
           }
         </script>
       </body>
