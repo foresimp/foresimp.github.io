@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Test Web"
-AuthUserFile /.htpasswd
-require valid-user
