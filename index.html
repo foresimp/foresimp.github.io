@@ -6,17 +6,14 @@
     </head>
     <body>
         <form id="form1" action="#">
-          <input type="text" id="input-message">
-          <input type="button" onclick="showMessage()" value="送信">
+          <input type="password" id="input-password">
+          <input type="button" onclick="showMessage(input-password.value)" value="ログイン">
         </form>
         <p id="output-message"></p>
         <script language="javascript" type="text/javascript">
-          const showMessage = () => {
-            const textbox = document.getElementById("input-message");
-            const inputValue = textbox.value;
-      
+          const showMessage = (password) => {
             //テキストボックスの値を使って、出力するメッセージを生成する
-            const output = "入力された内容は「" + inputValue + "」です。";
+            const output = "入力された内容は「" + password + "」です。";
             //出力用のp要素にメッセージを表示
             document.getElementById("output-message").innerHTML = output;
           }
