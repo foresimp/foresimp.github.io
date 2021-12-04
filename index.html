@@ -11,9 +11,9 @@
         </form>
         <p id="output-message"></p>
         <script language="javascript" type="text/javascript">
-          const showMessage = (password) => {
+          function showMessage(value) {
             //テキストボックスの値を使って、出力するメッセージを生成する
-            const output = "入力された内容は「" + password + "」です。";
+            const output = "入力された内容は「" + value + "」です。";
             //出力用のp要素にメッセージを表示
             document.getElementById("output-message").innerHTML = output;
           }
