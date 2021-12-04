@@ -5,12 +5,21 @@
         <title>ログイン | お試しサーバー</title>
     </head>
     <body>
-        <h1>ログイン</h1>
-        <form action="user.php" method="post">
-            <p>パスワード</p>>
-            <input type="password" name="password">
-            <input type="submit" value="ログイン">
-            <input type="button" onclick="location.href='./login.html'" value="遷移">
+        <form id="form1" action="#">
+          <input type="text" id="input-message">
+          <input type="button" onclick="showMessage()" value="送信">
         </form>
-    </body>
+        <p id="output-message"></p>
+        <script language="javascript" type="text/javascript">
+          const showMessage = () => {
+            const textbox = document.getElementById("input-message");
+            const inputValue = textbox.value;
+      
+            //テキストボックスの値を使って、出力するメッセージを生成する
+            const output = "入力された内容は「" + inputValue + "」です。";
+            //出力用のp要素にメッセージを表示
+            document.getElementById("output-message").innerHTML = output;
+          }
+        </script>
+      </body>
 </html>
