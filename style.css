@@ -21,12 +21,12 @@ script {
 }
 html,
 body,
-p,
-form,
-h1 {
+#form,
+#title {
   display: block;
 }
-input {
+#username,
+#password {
   display: inline-block;
 }
 
