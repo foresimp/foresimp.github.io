@@ -11,10 +11,19 @@
 /*————————————————————————————————*/
 /* Display */
 /*————————————————————————————————*/
-head, link, meta, style, title, script {
+head,
+link,
+meta,
+style,
+title,
+script {
   display: none;
 }
-html, body, p, form {
+html,
+body,
+p,
+form,
+h1 {
   display: block;
 }
 input {
@@ -27,7 +36,11 @@ input {
 html {
   height: 100%;
   background-color: rgb(15, 30, 60);
-  background-image: linear-gradient(to top, rgb(10, 20, 40) 0%, rgb(20, 40, 80) 100%);
+  background-image: linear-gradient(
+    to top,
+    rgb(10, 20, 40) 0%,
+    rgb(20, 40, 80) 100%
+  );
 }
 input {
   font-family: "Orbitron", sans-serif;
@@ -45,6 +58,10 @@ input::placeholder {
   font-family: "Orbitron", sans-serif;
   color: rgb(20, 40, 80);
   -webkit-text-fill-color: rgb(20, 40, 80);
+}
+h1 {
+  margin: calc(30vh - 100px) auto 0;
+  color: white;
 }
 form {
   text-align: center;
