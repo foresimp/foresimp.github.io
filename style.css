@@ -21,6 +21,7 @@ script {
 }
 html,
 body,
+p,
 #form,
 #title {
   display: block;
@@ -72,6 +73,12 @@ html {
   font-family: Arial, sans-serif;
   color: rgb(20, 40, 80);
   -webkit-text-fill-color: rgb(20, 40, 80);
+}
+#message {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: darkred;
+  
 }
 #button {
   font-family: Arial, sans-serif;

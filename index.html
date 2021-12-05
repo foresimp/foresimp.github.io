@@ -15,6 +15,7 @@
     <form id="form">
       <input id="username"　type="text" placeholder="ユーザー名を入力してください">
       <input id="password"　type="password" placeholder="パスワードを入力してください">
+      <p id="message"></p>
       <input id="button" type="submit" value="ログイン">
     </form>
     <script>
@@ -33,7 +34,9 @@
             window.location = url;
           } else {
             const input = document.getElementById('password');
+            const message = document.getElementById('message');
             input.value = '';
+            message.innerHTML = 'ユーザー名またはパスワードが違います';
           }
         };
         xhr.onerror = function () {
