@@ -32,10 +32,8 @@
           if (xhr.readyState === 4 && xhr.status === 200) {
             window.location = url;
           } else {
-            const input = document.getElementById('username');
-            const input2 = document.getElementById('password');
+            const input = document.getElementById('password');
             input.value = '';
-            input2.value = '';
           }
         };
         xhr.onerror = function () {
