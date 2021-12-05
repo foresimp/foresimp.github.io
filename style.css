@@ -25,9 +25,7 @@ body,
 #title {
   display: block;
 }
-#username,
-#password,
-#button {
+input {
   display: inline-block;
 }
 

@@ -15,7 +15,7 @@
     <form id="form">
       <input id="username"　type="text" placeholder="ユーザー名を入力してください">
       <input id="password"　type="password" placeholder="パスワードを入力してください">
-      <button id="button">ログイン</button>
+      <input id="button" type="submit" value="ログイン">
     </form>
     <script>
       function hash(text) {
@@ -32,10 +32,10 @@
           if (xhr.readyState === 4 && xhr.status === 200) {
             window.location = url;
           } else {
-            const message = document.getElementById('message');
-            const input = document.getElementById('password');
-            message.innerHTML = 'Wrong password! Try again.';
+            const input = document.getElementById('text');
+            const input2 = document.getElementById('password');
             input.value = '';
+            input2.value = '';
           }
         };
         xhr.onerror = function () {
@@ -49,12 +49,11 @@
         auth(password);
         event.preventDefault();
       });
-      const button = document.getElementById('button');
-      form.addEventListener('click', function (event) {
-        const password = document.getElementById('password').value;
-        auth(password);
-        event.preventDefault();
-      });
+      /*window.document.onkeydown = function(event) {
+        if (event.key === 'Enter') {
+          document.form.submit();
+        }
+      }*/
     </script>
   </body>
 </html>
