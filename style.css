@@ -67,10 +67,8 @@ html {
   -webkit-text-fill-color: rgb(200, 210, 240);
   background-color: rgb(10, 20, 40);
   font-size: 20px;
-}
-/*#username {
   margin: 2vh auto 0;
-}*/
+}
 #username::placeholder,
 #password::placeholder {
   font-family: Arial, sans-serif;

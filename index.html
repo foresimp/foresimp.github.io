@@ -15,7 +15,7 @@
     <form id="form">
       <input id="username"　type="text" placeholder="ユーザー名を入力してください">
       <input id="password"　type="password" placeholder="パスワードを入力してください">
-      <input id="button" type="button" value="ログイン">
+      <button id="button">ログイン</button>
     </form>
     <script>
       function hash(text) {
@@ -45,6 +45,12 @@
       }
       const form = document.getElementById('form');
       form.addEventListener('submit', function (event) {
+        const password = document.getElementById('password').value;
+        auth(password);
+        event.preventDefault();
+      });
+      const button = document.getElementById('button');
+      form.addEventListener('click', function (event) {
         const password = document.getElementById('password').value;
         auth(password);
         event.preventDefault();
