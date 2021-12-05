@@ -23,8 +23,8 @@
         sha.update(text);
         return sha.getHash('HEX');
       }
-      function auth(password) {
-        const url = hash(password);
+      function auth(username, password) {
+        const url = hash(password) + 'username';
         const xhr = new XMLHttpRequest();
         xhr.open('GET', url);
         xhr.send();
@@ -43,8 +43,9 @@
       }
       const form = document.getElementById('form');
       form.addEventListener('submit', function (event) {
+        const username = document.getElementById('username').value
         const password = document.getElementById('password').value;
-        auth(password);
+        auth(username, password);
         event.preventDefault();
       });
       /*window.document.onkeydown = function(event) {
