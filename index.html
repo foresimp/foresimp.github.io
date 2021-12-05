@@ -11,10 +11,11 @@
     <script type="text/javascript" src="sha256.js"></script>
   </head>
   <body>
-    <h1>ログイン</h1>
+    <h1 id="title">ログイン</h1>
     <form id="form">
-      <p id="message">パスワードを入力してください</p>
-      <input type="password" placeholder="password" id="password">
+      <input  id="username"　type="text" placeholder="ユーザー名を入力してください">
+      <input  id="password"　type="password" placeholder="パスワードを入力してください">
+      <input type="button" value="ログイン">
     </form>
     <script>
       function hash(text) {
