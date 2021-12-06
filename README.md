@@ -43,5 +43,14 @@ GitHub Pages などの静的サイトのホスティングサービスで擬似�
 
 ## コードの書き方
 
-- html
-- css
+- HTML
+- CSS
+  - CSS プロパティの記述順
+    1. position(top/right/bottom/left 含め)
+    2. display/overflow
+    3. z-index
+    4. float
+    5. height/width
+    6. padding/margin/border
+    7. background
+    8. color/text/font/line-heeight
