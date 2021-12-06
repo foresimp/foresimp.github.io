@@ -14,8 +14,24 @@
     <form id="form">
       <h1 id="title">Login</h1>
       <input id="username"　type="text" placeholder="ユーザー名を入力してください">
+      <div id="line"></div>
       <input id="password"　type="password" placeholder="パスワードを入力してください">
-      <p id="message"> </p>
+      <p id="message">or</p>
+      <div id="div">
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+      </div>
+      <p id="message2"></p>
       <input id="button" type="submit" value="ログイン">
     </form>
     <script>
@@ -34,14 +50,10 @@
             window.location = url;
           } else {
             const input = document.getElementById('password');
-            const message = document.getElementById('message');
+            const message = document.getElementById('message2');
             input.value = '';
             message.innerHTML = 'ユーザー名またはパスワードが違います';
           }
-        };
-        xhr.onerror = function () {
-          const message = document.getElementById('message');
-          message.innerHTML = 'Sorry, ERROR !';
         };
       }
       const form = document.getElementById('form');
